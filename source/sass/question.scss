@@ -15,6 +15,7 @@
 .questionnaire {
   border-radius: 6px;
   background: $white;
+  display: none;
 
   &__title {
     font-weight: bold;
@@ -149,6 +150,7 @@
 
   &--opacity {
     transition: ease-in-out 0.3s;
+    opacity: 1;
   }
 }
 
@@ -172,10 +174,3 @@
   }
 }
 
-.show {
-  display: flex;
-}
-
-.hide {
-  display: none !important;
-}
