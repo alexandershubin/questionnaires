@@ -9,7 +9,7 @@
 
   function start() {
     allHidden()
-    selector.$items[0].show();
+    changeDisplay(selector.$items[0], 'flex');
 
     selector.$button.forEach(item => {
       item.addEventListener('click', function (event) {
@@ -18,15 +18,20 @@
     })
   }
 
+  function changeDisplay($node, value) {
+    $node.style.display = value;
+    return $node;
+  }
+
   function nextItem() {
     allHidden()
-    selector.$items[selector.count].show()
+    changeDisplay(selector.$items[selector.count], 'flex')
     selector.count++
   }
 
   function allHidden() {
     selector.$items.forEach(item => {
-      item.slideDown()
+      changeDisplay(item, 'none');
     })
   }
 
