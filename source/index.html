@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Описание страницы сайта."/>
+  <title>Вайскод</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<main class="main">
+  
+  <div class="container">
+    <section class="questionnaire row">
+      <div class="col-xl-9 col-lg-9 col-md-8">
+        <div class="questionnaire-main p-sm-5 pb-3 pt-3">
+          <div class="slider">
+            <p class="slider__description">Готово:
+              <span class="slider__percent">30%</span>
+            </p>
+            <div class="slider-bar row m-0 mt-4 mb-5">
+              <span class="progress progress--opacity col mr-3"></span>
+              <span class="progress col mr-3"></span>
+              <span class="progress col"></span>
+            </div>
+          </div>
+          <h2 class="questionnaire__title">Выберите сборщик проектов, которым Вы используете:</h2>
+          <div class="pack row align-items-baseline mb-lg-5 mt-5">
+            <div class="pack__wrap d-flex flex-column align-items-center col-lg-3 col-sm-6">
+              <img class="image image--margin-first" src="img/gulp.png" alt="gulp" width="45" height="100">
+              <div class="d-flex align-items-center">
+                <input type="radio" name="radio-pack" value="1" id="gulp" checked>
+                <label class="pack-label" for="gulp">Gulp</label>
+              </div>
+            </div>
+            <div class="pack__wrap d-flex flex-column align-items-center col-lg-3 col-sm-6">
+              <img class="image image--margin-second" src="img/webpack.png" alt="webpack" width="118" height="118">
+              <div class="d-flex align-items-center">
+                <input type="radio" name="radio-pack" value="2" id="webpack">
+                <label class="pack-label" for="webpack">Webpack</label>
+              </div>
+            </div>
+            <div class="pack__wrap d-flex flex-column align-items-center col-lg-3 col-sm-6">
+              <img class="image image--margin-third" src="img/grant.png" alt="grant" width="105" height="105">
+              <div class="d-flex align-items-center">
+                <input type="radio" name="radio-pack" value="3" id="grunt">
+                <label class="pack-label" for="grunt">Grunt</label>
+              </div>
+            </div>
+            <div class="pack__wrap d-flex flex-column align-items-center col-lg-3 col-sm-6">
+              <img class="image image--margin-fourth" src="img/parcel.png" alt="parcel" width="161" height="127">
+              <div class="d-flex align-items-center">
+                <input type="radio" name="radio-pack" value="4" id="parcel">
+                <label class="pack-label" for="parcel">Parcel</label>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__btn row">
+            <button class="button btn-next">Следующий шаг</button>
+          </div>
+        </div>
+      </div>
+      <div class="questionnaire-aside col-xl-3 col-lg-3 col-md-4">
+        <aside class="aside d-flex flex-column justify-content-center">
+          <div class="aside__title mb-4">
+            <div class="aside__img">
+              <img class="aside__logo" src="img/logo.svg" alt="logo">
+            </div>
+            <h3 class="aside__h3">ВАЙСКОД</h3>
+          </div>
+          <div class="aside__msg mb-5">
+            <p class="aside__description">
+              Привет, Коллега. Для попадания в команду необходимо выполнить тестовое задание,
+              а именно сверстать и запрограммировать этот маленький квиз.
+            </p>
+          </div>
+          <div class="aside__footer mt-5">
+            <h4 class="aside__h4">Шаг 1</h4>
+            <p class="aside__step">Осталось шагов 2</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="questionnaire row">
+      <div class="col-xl-9 col-lg-9 col-md-8">
+        <div class="questionnaire-main p-sm-5 pb-3 pt-3">
+          <div class="slider">
+            <p class="slider__description">Готово:
+              <span class="slider__percent">60%</span>
+            </p>
+            <div class="slider-bar row m-0 mt-4 mb-5">
+              <span class="progress col mr-3"></span>
+              <span class="progress progress--opacity col mr-3"></span>
+              <span class="progress col"></span>
+            </div>
+          </div>
+          <h2 class="questionnaire__title">Перечислите практические навыки</h2>
+          <div class="pack row align-items-baseline mb-5 mt-5">
+            <div class="col-4">
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="1" id="bem" checked>
+                <label class="pack-label" for="gulp">Методология БЭМ</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="jquery">
+                <label class="pack-label" for="parcel">JQuery</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="haml">
+                <label class="pack-label" for="parcel">HAML</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="pug">
+                <label class="pack-label" for="parcel">PUG</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="stylus">
+                <label class="pack-label" for="parcel">Stylus</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="scss">
+                <label class="pack-label" for="parcel">SCSS</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="1" id="less">
+                <label class="pack-label" for="gulp">LESS</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="svg">
+                <label class="pack-label" for="parcel">SVG</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="canvas">
+                <label class="pack-label" for="parcel">Canvas</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="animation">
+                <label class="pack-label" for="parcel">Анимации</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="ios">
+                <label class="pack-label" for="parcel">Верстка под iOS</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="resize">
+                <label class="pack-label" for="parcel">Адаптивная верстка</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="email">
+                <label class="pack-label" for="parcel">Верстка рассылок</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="maket">
+                <label class="pack-label" for="parcel">Верстка без макета</label>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <input type="checkbox" name="radio-pack" value="4" id="git">
+                <label class="pack-label" for="parcel">GIT</label>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__btn row">
+            <button class="button btn-next">Следующий шаг</button>
+          </div>
+        </div>
+      </div>
+      <div class="questionnaire-aside col-xl-3 col-lg-3 col-md-4">
+        <aside class="aside d-flex flex-column justify-content-center">
+          <div class="aside__title mb-4">
+            <div class="aside__img">
+              <img class="aside__logo" src="img/logo.svg" alt="logo">
+            </div>
+            <h3 class="aside__h3">ВАЙСКОД</h3>
+          </div>
+          <div class="aside__msg mb-5">
+            <p class="aside__description">
+              Отметьте только те технологии и типы задач с которыми Вы хорошо знакомы.
+              Отсутствие опыта отнюдь не означает, что у Вас меньши шансов попасть в команду.
+            </p>
+          </div>
+          <div class="aside__footer mt-5">
+            <h4 class="aside__h4">Шаг 2</h4>
+            <p class="aside__step">Осталось шагов 1</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="questionnaire row">
+      <div class="col-xl-9 col-lg-9 col-md-8">
+        <div class="questionnaire-main p-sm-5 pb-3 pt-3">
+          <div class="slider">
+            <p class="slider__description">Готово:
+              <span class="slider__percent">99%</span>
+            </p>
+            <div class="slider-bar row m-0 mt-4 mb-5">
+              <span class="progress col mr-3"></span>
+              <span class="progress col mr-3"></span>
+              <span class="progress progress--opacity col"></span>
+            </div>
+          </div>
+          <h2 class="questionnaire__title">Заполните информацию о себе</h2>
+          <form class="form row flex-column mb-lg-4 mt-5" action="" method="post">
+            <input class="form__input ml-auto mr-auto mb-3 p-2" type="text" required placeholder="Полное ФИО">
+            <input class="form__input ml-auto mr-auto mb-3 p-2" type="text" required placeholder="Год рождения">
+            <input class="form__input ml-auto mr-auto mb-3 p-2" type="text" required placeholder="Место жительства">
+            <input class="form__input ml-auto mr-auto mb-3 p-2" type="text" required placeholder="Телеграмм">
+          </form>
+          <div class="questionnaire__btn row">
+            <a href="" class="button btn-next">Следующий шаг</a>
+          </div>
+        </div>
+      </div>
+      <div class="questionnaire-aside col-xl-3 col-lg-3 col-md-4">
+        <aside class="aside d-flex flex-column justify-content-center">
+          <div class="aside__title mb-4">
+            <div class="aside__img">
+              <img class="aside__logo" src="img/logo.svg" alt="logo">
+            </div>
+            <h3 class="aside__h3">ВАЙСКОД</h3>
+          </div>
+          <div class="aside__msg mb-5">
+            <p class="aside__description">
+              Осталось еще немного. Заполните информацию о себе.
+            </p>
+          </div>
+          <div class="aside__footer mt-5">
+            <h4 class="aside__h4">Шаг 3</h4>
+            <p class="aside__step">Осталось шагов 0</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
