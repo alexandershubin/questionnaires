@@ -1,39 +1,50 @@
 (function () {
-  'use strict';
+  const $slide = $('.questionnaire');
+  const $btn = $('.btn-next');
+  let count = 1;
+  let inputLogin = $('.form__input').eq(0);
+  const key ='keys';
+  let isStorageSupport = true;
+  let storage = "";
 
-  var selector = {
-    $button: document.querySelectorAll('.btn-next'),
-    $items: document.querySelectorAll('.questionnaire'),
-    count: 1
-  };
+  try {
+    storage = localStorage.getItem(key);
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
-  function start() {
-    allHidden()
-    changeDisplay(selector.$items[0], 'flex');
-
-    selector.$button.forEach(item => {
-      item.addEventListener('click', function (event) {
-        nextItem()
-      });
+  const handleChange = function () {
+    inputLogin.on('change', function (e) {
+      let value = $(this).val();
+      if (isStorageSupport) {
+        localStorage.setItem(key, value);
+      }
     })
   }
 
-  function changeDisplay($node, value) {
-    $node.style.display = value;
-    return $node;
+  if (storage) {
+    inputLogin.val(storage);
   }
 
-  function nextItem() {
-    allHidden()
-    changeDisplay(selector.$items[selector.count], 'flex')
-    selector.count++
+  const initSlide = () => {
+    $slide.hide()
+    $slide.eq(0).show();
+    clickBtn()
   }
 
-  function allHidden() {
-    selector.$items.forEach(item => {
-      changeDisplay(item, 'none');
+  const clickBtn = () => {
+    $btn.on('click', (e) => {
+      handleChange()
+      nextSlide()
     })
   }
 
-  start()
-}());
+  const nextSlide = () => {
+    $slide.fadeOut(1000)
+    $slide.eq(count).fadeIn(1000)
+    count++
+  }
+
+  initSlide()
+  handleChange()
+})()

@@ -68,4 +68,16 @@ button {
     opacity: 0.7;
     transition: ease-in-out 0.3s;
   }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+input {
+  outline: none;
 }
